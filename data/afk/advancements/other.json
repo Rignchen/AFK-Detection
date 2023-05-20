@@ -1,0 +1,27 @@
+{
+    "criteria": {
+		"place_block":{
+			"trigger": "placed_block"
+		},
+		"interact":{
+			"trigger": "item_used_on_block"
+		},
+		"inventory":{
+			"trigger": "inventory_changed"
+		},
+		"fight":{
+			"trigger": "player_hurt_entity"
+		}
+    },
+	"requirements": [
+		[
+			"place_block",
+			"interact",
+			"inventory",
+			"fight"
+		]
+	],
+	"rewards": {
+		"function": "afk:action/other"
+	}
+}
